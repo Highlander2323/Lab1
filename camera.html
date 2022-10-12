@@ -3,12 +3,20 @@
 
 <head>
 <title>Camera</title>
+<style>
+    .block{
+        display:block;
+        width: 200px;
+        height:100px;
+        border-radius: 50px;
+    }
+</style>
 </head>
 
 <body>
 <video width = "640" height = "480" id = "video" controls autoplay></video>
 <canvas id = "canvas"></canvas>
-<button type="button" onclick="capture()"> Capture</button>
+<button type="button" class = "block" onclick="capture()">Capture</button>
 <script src = "camera.js"></script>
 </body>
 
